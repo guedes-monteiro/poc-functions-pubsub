@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy-dev": " gcloud config set project poc-functions-pubsub && gcloud functions deploy"
+    "deploy-dev": " gcloud config set project poc-functions-pubsub && gcloud functions deploy partners --runtime=nodejs12 --allow-unauthenticated --trigger-http"
   },
   "keywords": [],
   "author": "",
